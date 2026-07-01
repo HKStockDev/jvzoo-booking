@@ -1,0 +1,25 @@
+import { cacheService } from "@workspace/shared/services/cache.service";
+import { CityService } from "@workspace/shared/services/cities.service";
+import { CACHE_KEYS } from "@workspace/shared/utils/cache-keys";
+
+export const FPhighLevelCitiesQuery = async ({ request }: { request: Request }) => {
+	const queryFn = async () => {
+		const svc = new CityService(request);
+		const resp = await svc.getFPHighLevelCities();
+		return resp;
+	};
+
+	const result = await cacheService.get(CACHE_KEYS.cities.highLevel("FP"), queryFn, 86400);
+	return result;
+};
+
+export const cityDetailsQuery = async ({ request, cityId }: { request: Request; cityId: number }) => {
+	const queryFn = async () => {
+		const svc = new CityService(request);
+		const resp = await svc.getCityDetailsFrontPanel(cityId);
+		return resp;
+	};
+
+	const result = await cacheService.get(CACHE_KEYS.cities.details("FP", cityId), queryFn, 86400);
+	return result;
+};

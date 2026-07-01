@@ -1,0 +1,36 @@
+.env
+npm-debug.log*
+
+.react-router/
+
+.DS_Store
+
+stats.html
+
+/node_modules/
+admin/node_modules
+shared/node_modules
+front-panel/node_modules
+
+shared/tsconfig.tsbuildinfo
+
+dist/
+*.tsbuildinfo
+
+/dist/
+admin/dist/
+shared/dist/
+front-panel/dist/
+build/
+
+# React Router
+/.react-router/
+/build/
+.vscode/
+
+logs/
+*.log
+
+# Large local assets (excluded from git to keep push size small)
+front-panel/public/contact-us.jpg
+front-panel/public/main-website-ss-01.png

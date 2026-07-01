@@ -1,0 +1,447 @@
+{
+  "root": {
+    "headers": [
+      "SingleFetchClassInstance",
+      {}
+    ],
+    "current_user_error": [
+      "SanitizedError",
+      "Error",
+      "Unexpected Server Error",
+      -7
+    ],
+    "couponsResp": {
+      "coupons": [
+        {
+          "id": 3,
+          "code": "TEST002",
+          "coupon_type": "AUTOMATIC",
+          "discount_type": "PERCENTAGE",
+          "discount_value": 25,
+          "valid_from": "2026-03-29T04:57:00+00:00",
+          "valid_until": "2026-04-23T06:57:00+00:00",
+          "is_active": true,
+          "created_at": "2026-03-29T14:58:37.531489+00:00",
+          "updated_at": "2026-03-30T16:08:53.177736+00:00",
+          "tours": [
+            {
+              "id": "8be05459-1352-42f8-94c2-c7268cf63f59",
+              "tour_options": [
+                {
+                  "id": 2
+                }
+              ]
+            },
+            {
+              "id": "dad6ce30-9603-4ea1-8561-27bac0d29131",
+              "tour_options": [
+                {
+                  "id": 5
+                }
+              ]
+            },
+            {
+              "id": "396fa44b-5811-4e85-87ed-dc6752d1f1d9",
+              "tour_options": [
+                {
+                  "id": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "routes/layout": {
+    "categoriesResp": {
+      "data": [
+        {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "image": "aqurium_underwater_zoo_3_3_11zonjpeg-f84a7834-c7e7-4716-ab34-58c468cf5b52",
+          "url_key": "wildlife-marine-experiences"
+        },
+        {
+          "id": 2,
+          "name": "Aquariums Tours",
+          "image": "national_aquarium_abu_dhabi_1jpg-74e8f051-f688-4d53-a4f2-262870b7c469",
+          "url_key": "aquarium-tours"
+        },
+        {
+          "id": 1,
+          "name": "Cruise Tours",
+          "image": "cruise_category_img_11zon_11zonjpg-dbfe3d57-94f1-4358-9f8f-106f9fa6c3a4",
+          "url_key": "cruise-tours"
+        },
+        {
+          "id": 4,
+          "name": "Cultural & Heritage Tours",
+          "image": "al_ain_city_3jpg-5bce2082-fff6-49de-9c3d-4628a686f665",
+          "url_key": "cultural-heritage-tours"
+        },
+        {
+          "id": 6,
+          "name": "Boat Rides",
+          "image": "yellow_boat_3_3_11zonjpeg-640f888b-6226-4eeb-86bc-7d38f79a7a61",
+          "url_key": "boat-rides"
+        },
+        {
+          "id": 3,
+          "name": "Adventurous Activities",
+          "image": "parasailing_1jpg-b41f2386-8a3a-4b67-898f-7e0a06ebae1a",
+          "url_key": "adventurous-activities"
+        }
+      ]
+    }
+  },
+  "routes/Home/home": {
+    "featuredToursResp": {
+      "tours": [
+        {
+          "id": "72b2d781-e37e-44a6-84fb-b3ddf56c28e6",
+          "name": "Al Ain Full-Day Tour",
+          "cover_image": "al_ain_city_3jpg-c6005958-e273-48fe-9027-6adb47f0057a",
+          "url_key": "al-ain-full-day-tour",
+          "updated_at": "2026-03-15T09:41:49.678604+00:00",
+          "price": 249.9,
+          "city": {
+            "id": 2,
+            "name": "Abu Dhabi",
+            "url_key": "abu-dhabi-city"
+          },
+          "category": {
+            "id": 4,
+            "name": "Cultural & Heritage Tours",
+            "url_key": "cultural-heritage-tours"
+          },
+          "hasGroupPrice": false
+        },
+        {
+          "id": "380054a3-cb1e-457c-8435-8ee3fd05d2b5",
+          "name": "Burj Khalifa Tour Dubai",
+          "cover_image": "burj_khalifa_2jpg-cd273642-8b68-4160-a06a-c8728faca775",
+          "url_key": "burj-khalifa",
+          "updated_at": "2026-02-28T11:31:45.482905+00:00",
+          "price": 142,
+          "city": {
+            "id": 1,
+            "name": "Dubai",
+            "url_key": "dubai-city"
+          },
+          "category": {
+            "id": 1,
+            "name": "Cruise Tours",
+            "url_key": "cruise-tours"
+          },
+          "hasGroupPrice": false
+        },
+        {
+          "id": "dad6ce30-9603-4ea1-8561-27bac0d29131",
+          "name": "National Aquarium, Abu Dhabi",
+          "cover_image": "national_aquarium_abu_dhabi_1jpg-85e74af7-9e52-453a-b7b1-9f9e0ec468ae",
+          "url_key": "national-aquarium-abu-dhabi",
+          "updated_at": "2026-03-09T16:55:15.767711+00:00",
+          "price": 99,
+          "city": {
+            "id": 2,
+            "name": "Abu Dhabi",
+            "url_key": "abu-dhabi-city"
+          },
+          "category": {
+            "id": 2,
+            "name": "Aquariums Tours",
+            "url_key": "aquarium-tours"
+          },
+          "hasGroupPrice": false
+        },
+        {
+          "id": "9cbce2bd-fcbf-46df-8193-db6173a6749d",
+          "name": "Rustar Dhow Cruise, Dubai",
+          "cover_image": "al_mansoor_dhow_cruise_2_1_11zonjpg-ed753ec3-079a-427e-a2f6-96d3f8e3a95c",
+          "url_key": "rustar-dhow-cruise-dubai-tour",
+          "updated_at": "2026-03-09T16:59:17.047287+00:00",
+          "price": 60,
+          "city": {
+            "id": 1,
+            "name": "Dubai",
+            "url_key": "dubai-city"
+          },
+          "category": {
+            "id": 1,
+            "name": "Cruise Tours",
+            "url_key": "cruise-tours"
+          },
+          "hasGroupPrice": false
+        },
+        {
+          "id": "8be05459-1352-42f8-94c2-c7268cf63f59",
+          "name": "The Green Planet, Dubai",
+          "cover_image": "green_planet_1_1_11zonjpg-51e474d3-5686-46c6-8426-7bf13e968921",
+          "url_key": "green-planet-dubai",
+          "updated_at": "2026-03-25T17:25:21.768874+00:00",
+          "price": 135,
+          "city": {
+            "id": 1,
+            "name": "Dubai",
+            "url_key": "dubai-city"
+          },
+          "category": {
+            "id": 5,
+            "name": "Wildlife & Marine Experiences",
+            "url_key": "wildlife-marine-experiences"
+          },
+          "hasGroupPrice": false
+        }
+      ],
+      "total": 5
+    },
+    "citiesResp": {
+      "data": [
+        {
+          "id": 3,
+          "name": "Sharjah",
+          "card_image": "sharjah_city_3jpeg-a00c87a7-dfbf-4e31-a2c0-36f026694f19",
+          "url_key": "sharjah"
+        },
+        {
+          "id": 2,
+          "name": "Abu Dhabi",
+          "card_image": "museum_of_the_future_1png-42c633fc-c267-4598-aca3-0a2ef4700b67",
+          "url_key": "abu-dhabi-city"
+        },
+        {
+          "id": 1,
+          "name": "Dubai",
+          "card_image": "dubai_city_titlejpg-24f281ef-8e58-4b49-8369-128e03aeb3c9",
+          "url_key": "dubai-city"
+        }
+      ]
+    },
+    "categoriesResp": {
+      "data": [
+        {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "image": "aqurium_underwater_zoo_3_3_11zonjpeg-f84a7834-c7e7-4716-ab34-58c468cf5b52",
+          "url_key": "wildlife-marine-experiences"
+        },
+        {
+          "id": 2,
+          "name": "Aquariums Tours",
+          "image": "national_aquarium_abu_dhabi_1jpg-74e8f051-f688-4d53-a4f2-262870b7c469",
+          "url_key": "aquarium-tours"
+        },
+        {
+          "id": 1,
+          "name": "Cruise Tours",
+          "image": "cruise_category_img_11zon_11zonjpg-dbfe3d57-94f1-4358-9f8f-106f9fa6c3a4",
+          "url_key": "cruise-tours"
+        },
+        {
+          "id": 4,
+          "name": "Cultural & Heritage Tours",
+          "image": "al_ain_city_3jpg-5bce2082-fff6-49de-9c3d-4628a686f665",
+          "url_key": "cultural-heritage-tours"
+        },
+        {
+          "id": 6,
+          "name": "Boat Rides",
+          "image": "yellow_boat_3_3_11zonjpeg-640f888b-6226-4eeb-86bc-7d38f79a7a61",
+          "url_key": "boat-rides"
+        },
+        {
+          "id": 3,
+          "name": "Adventurous Activities",
+          "image": "parasailing_1jpg-b41f2386-8a3a-4b67-898f-7e0a06ebae1a",
+          "url_key": "adventurous-activities"
+        }
+      ]
+    },
+    "heroSectionsResp": [
+      {
+        "id": 1,
+        "name": "Burj Khalifa",
+        "image": "hero_burj_khalifa_2jpg-e22f8224-2447-4168-b19d-92363bbd46bf"
+      },
+      {
+        "id": 2,
+        "name": "Burj Arab",
+        "image": "hero_burj_arab_1jpg-3f9d814d-cb82-4a4e-ba6a-bd23f5ebba3e"
+      },
+      {
+        "id": 3,
+        "name": "City Hero",
+        "image": "hero_city_4jpg-bbc6d63f-dbf1-4c56-b085-cbb7d21ca95c"
+      }
+    ],
+    "reviewsResp": {
+      "reviews": [
+        {
+          "comment": "Very nice experience in booking with WanderNest! They have a very helpful and cooperative staff. I will definitely booking again with them.",
+          "created_at": "2026-03-28T10:52:31.746325+00:00",
+          "id": 27,
+          "rating": 5,
+          "user": {
+            "id": "9cccb9a8-e6f6-46f8-9f9e-d15c0528fa56",
+            "full_name": "Rehman Saleem",
+            "avatar": ""
+          },
+          "tour": {
+            "id": "72b2d781-e37e-44a6-84fb-b3ddf56c28e6",
+            "name": "Al Ain Full-Day Tour",
+            "url_key": "al-ain-full-day-tour"
+          }
+        },
+        {
+          "comment": "Very good experience!! Will again book with WanderNest",
+          "created_at": "2026-03-23T07:47:47.401691+00:00",
+          "id": 26,
+          "rating": 5,
+          "user": {
+            "id": "361b1fbe-0083-413f-89c3-20f33e706b09",
+            "full_name": "Muhammad Talha",
+            "avatar": ""
+          },
+          "tour": {
+            "id": "5218d8fa-7ff5-4f7f-87f2-bb729fbf3b9e",
+            "name": "Dubai Safari Park",
+            "url_key": "dubai-safari-park"
+          }
+        },
+        {
+          "comment": "Very bad experince ! never recommend",
+          "created_at": "2026-03-13T16:23:17.785504+00:00",
+          "id": 22,
+          "rating": 5,
+          "user": {
+            "id": "361b1fbe-0083-413f-89c3-20f33e706b09",
+            "full_name": "Muhammad Talha",
+            "avatar": ""
+          },
+          "tour": {
+            "id": "dad6ce30-9603-4ea1-8561-27bac0d29131",
+            "name": "National Aquarium, Abu Dhabi",
+            "url_key": "national-aquarium-abu-dhabi"
+          }
+        },
+        {
+          "comment": "We booked the full-day heritage tour and it exceeded all expectations. The agency handled every single detail—from the air-conditioned transport to booking skip-the-line tickets at the busiest spots. Our guide didn't just rattle off facts; they told captivating stories that brought the history to life. The lunch spot they chose was also incredible, serving authentic local food instead of typical tourist traps. Will definitely book through them again on our next trip.",
+          "created_at": "2026-03-16T10:49:29.3064+00:00",
+          "id": 23,
+          "rating": 4,
+          "user": {
+            "id": "361b1fbe-0083-413f-89c3-20f33e706b09",
+            "full_name": "Muhammad Talha",
+            "avatar": ""
+          },
+          "tour": {
+            "id": "b31cfdd1-137f-40b7-9889-db5d1b6100a7",
+            "name": "Hatta Mountain Water Dam & Heritage Village Tour",
+            "url_key": "hatta-dam-trip"
+          }
+        }
+      ]
+    },
+    "featuredCollectionsResp": {
+      "collections": [
+        {
+          "id": 3,
+          "name": "The Best Adventures of Dubai",
+          "description": "We have chosen the best tours in Dubai! Book your seat today..",
+          "isFeatured": true,
+          "collection_cities": [
+            {
+              "id": 5,
+              "city_id": 1
+            }
+          ],
+          "tours": [
+            {
+              "id": "8be05459-1352-42f8-94c2-c7268cf63f59",
+              "name": "The Green Planet, Dubai",
+              "cover_image": "green_planet_1_1_11zonjpg-51e474d3-5686-46c6-8426-7bf13e968921",
+              "url_key": "green-planet-dubai",
+              "updated_at": "2026-03-25T17:25:21.768874+00:00",
+              "price": 135,
+              "city": {
+                "id": 1,
+                "name": "Dubai",
+                "url_key": "dubai-city"
+              },
+              "category": {
+                "id": 5,
+                "name": "Wildlife & Marine Experiences",
+                "url_key": "wildlife-marine-experiences"
+              },
+              "hasGroupPrice": false
+            },
+            {
+              "id": "9cbce2bd-fcbf-46df-8193-db6173a6749d",
+              "name": "Rustar Dhow Cruise, Dubai",
+              "cover_image": "al_mansoor_dhow_cruise_2_1_11zonjpg-ed753ec3-079a-427e-a2f6-96d3f8e3a95c",
+              "url_key": "rustar-dhow-cruise-dubai-tour",
+              "updated_at": "2026-03-09T16:59:17.047287+00:00",
+              "price": 60,
+              "city": {
+                "id": 1,
+                "name": "Dubai",
+                "url_key": "dubai-city"
+              },
+              "category": {
+                "id": 1,
+                "name": "Cruise Tours",
+                "url_key": "cruise-tours"
+              },
+              "hasGroupPrice": false
+            },
+            {
+              "id": "6b270012-bde4-495e-84c1-d8a5ca845dd1",
+              "name": "Deep Dive Dubai",
+              "cover_image": "deep_dive_dubai_1jpg-045149a1-1865-483f-9d5e-bbcefa277b05",
+              "url_key": "deep-dive-dubai",
+              "updated_at": "2026-03-15T09:37:27.705312+00:00",
+              "price": 1499,
+              "city": {
+                "id": 1,
+                "name": "Dubai",
+                "url_key": "dubai-city"
+              },
+              "category": {
+                "id": 3,
+                "name": "Adventurous Activities",
+                "url_key": "adventurous-activities"
+              },
+              "hasGroupPrice": false
+            },
+            {
+              "id": "1e52d2b1-cac7-4423-a968-0094391b4863",
+              "name": "Parasailing in Dubai",
+              "cover_image": "parasailing_5jpg-9bb44e3a-3e27-4fee-8e5f-d21c2bbe13a3",
+              "url_key": "parasailing-dubai",
+              "updated_at": "2026-03-15T09:44:01.777902+00:00",
+              "price": 399,
+              "city": {
+                "id": 1,
+                "name": "Dubai",
+                "url_key": "dubai-city"
+              },
+              "category": {
+                "id": 3,
+                "name": "Adventurous Activities",
+                "url_key": "adventurous-activities"
+              },
+              "hasGroupPrice": false
+            }
+          ]
+        }
+      ],
+      "total": 1
+    },
+    "errors": "",
+    "success_msg": "",
+    "payment_intent": "",
+    "payment_intent_client_secret": "",
+    "redirect_status": ""
+  }
+}

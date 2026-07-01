@@ -1,0 +1,79 @@
+import { Heart } from "lucide-react";
+import { useState, useEffect } from "react";
+import { toast } from "sonner";
+
+const FAV_KEY = "TAD_favourite_tours_" + process.env.VITE_ENV;
+
+function isBrowser() {
+	return typeof window !== "undefined";
+}
+
+function readFavourites(): string[] {
+	if (!isBrowser()) return [];
+	try {
+		const raw = localStorage.getItem(FAV_KEY);
+		return raw ? JSON.parse(raw) : [];
+	} catch {
+		return [];
+	}
+}
+
+function writeFavourites(ids: string[]) {
+	if (!isBrowser()) return;
+	localStorage.setItem(FAV_KEY, JSON.stringify(ids));
+	window.dispatchEvent(new Event("favourites-change")); // same-tab sync
+}
+
+export function clearFavourites() {
+	if (!isBrowser()) return;
+	writeFavourites([]);
+}
+
+export function useFavourites() {
+	// Start empty so SSR and the first client render match (localStorage is client-only).
+	const [favourites, setFavourites] = useState<string[]>([]);
+
+	// sync on mount and storage events
+	useEffect(() => {
+		function sync() {
+			setFavourites(readFavourites());
+		}
+
+		sync();
+		window.addEventListener("storage", sync); // other tabs
+		window.addEventListener("favourites-change", sync); // same tab
+		return () => {
+			window.removeEventListener("storage", sync);
+			window.removeEventListener("favourites-change", sync);
+		};
+	}, []);
+
+	// derived helpers
+	const isFavourite = (tourId: string) => favourites.includes(tourId);
+	const toggle = (tourId: string) => {
+		const favs = readFavourites();
+		let nextFavs: string[];
+		if (favs.includes(tourId)) {
+			nextFavs = favs.filter((id) => id !== tourId);
+		} else {
+			nextFavs = [...favs, tourId];
+		}
+		writeFavourites(nextFavs);
+		setFavourites(nextFavs); // immediate update in this tab
+		toast.error(isFavourite(tourId) ? "Tour removed from favourites" : "Tour saved to favourites", {
+			icon: isFavourite(tourId) ? (
+				<Heart className="h-4 w-4 text-destructive" />
+			) : (
+				<Heart className="h-4 w-4 text-destructive fill-destructive" />
+			),
+		});
+	};
+
+	function clear() {
+		clearFavourites();
+	}
+
+	const count = favourites.length;
+
+	return { favourites, count, isFavourite, toggle, clear };
+}

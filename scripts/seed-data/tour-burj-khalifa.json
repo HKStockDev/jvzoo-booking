@@ -1,0 +1,595 @@
+{
+  "root": {
+    "headers": [
+      "SingleFetchClassInstance",
+      {}
+    ],
+    "current_user_error": [
+      "SanitizedError",
+      "Error",
+      "Unexpected Server Error",
+      -7
+    ],
+    "couponsResp": {
+      "coupons": [
+        {
+          "id": 3,
+          "code": "TEST002",
+          "coupon_type": "AUTOMATIC",
+          "discount_type": "PERCENTAGE",
+          "discount_value": 25,
+          "valid_from": "2026-03-29T04:57:00+00:00",
+          "valid_until": "2026-04-23T06:57:00+00:00",
+          "is_active": true,
+          "created_at": "2026-03-29T14:58:37.531489+00:00",
+          "updated_at": "2026-03-30T16:08:53.177736+00:00",
+          "tours": [
+            {
+              "id": "8be05459-1352-42f8-94c2-c7268cf63f59",
+              "tour_options": [
+                {
+                  "id": 2
+                }
+              ]
+            },
+            {
+              "id": "dad6ce30-9603-4ea1-8561-27bac0d29131",
+              "tour_options": [
+                {
+                  "id": 5
+                }
+              ]
+            },
+            {
+              "id": "396fa44b-5811-4e85-87ed-dc6752d1f1d9",
+              "tour_options": [
+                {
+                  "id": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "routes/layout": {
+    "categoriesResp": {
+      "data": [
+        {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "image": "aqurium_underwater_zoo_3_3_11zonjpeg-f84a7834-c7e7-4716-ab34-58c468cf5b52",
+          "url_key": "wildlife-marine-experiences"
+        },
+        {
+          "id": 2,
+          "name": "Aquariums Tours",
+          "image": "national_aquarium_abu_dhabi_1jpg-74e8f051-f688-4d53-a4f2-262870b7c469",
+          "url_key": "aquarium-tours"
+        },
+        {
+          "id": 1,
+          "name": "Cruise Tours",
+          "image": "cruise_category_img_11zon_11zonjpg-dbfe3d57-94f1-4358-9f8f-106f9fa6c3a4",
+          "url_key": "cruise-tours"
+        },
+        {
+          "id": 4,
+          "name": "Cultural & Heritage Tours",
+          "image": "al_ain_city_3jpg-5bce2082-fff6-49de-9c3d-4628a686f665",
+          "url_key": "cultural-heritage-tours"
+        },
+        {
+          "id": 6,
+          "name": "Boat Rides",
+          "image": "yellow_boat_3_3_11zonjpeg-640f888b-6226-4eeb-86bc-7d38f79a7a61",
+          "url_key": "boat-rides"
+        },
+        {
+          "id": 3,
+          "name": "Adventurous Activities",
+          "image": "parasailing_1jpg-b41f2386-8a3a-4b67-898f-7e0a06ebae1a",
+          "url_key": "adventurous-activities"
+        }
+      ]
+    }
+  },
+  "routes/Tour/tour-details": {
+    "tour": {
+      "id": "380054a3-cb1e-457c-8435-8ee3fd05d2b5",
+      "name": "Burj Khalifa Tour Dubai",
+      "isFeatured": true,
+      "isActive": true,
+      "cover_image": "burj_khalifa_2jpg-cd273642-8b68-4160-a06a-c8728faca775",
+      "images": [
+        "burj_khalifa_alljpg-f1df8f80-2889-489e-93a4-7adcd0520740",
+        "burj_khalifajpg-98e05de3-8ee6-43bd-ac56-801eee7072de"
+      ],
+      "overview": "Witness the views over Dubai from the observation deck of the iconic Burj Khalifa, the world's tallest building. Ascend to the 124th and 125th floors for a panoramic 360-degree view over the Arabian Gulf.",
+      "highlights": "Zip up the fastest elevators on the planet to reach the 124th floor of the Burj Khalifa for stunning views of the Dubai skyline.\nLevel up your Dubai trip (literally!) with a visit to the 124 and 125 floors of the Burj Khalifa.\nThe observation deck with floor-to-ceiling windows on the 124th floor gives you 360° views of the Arabian Gulf.\nThe 125th floor ups the ante with an open-air terrace. And don't miss the exquisite Mashrabiya motifs – a tribute to Arab arts and culture.\nFor a luxurious and personalized experience with shorter wait times, upgrade to Sky Lounge access on the 148th floor. You can also include a visit to the Dubai Aquarium & Underwater Zoo.\nFun Fact: The Burj Khalifa features the world's fastest elevator that travels at 10 meters per second, reaching the top in less than a minute.",
+      "meta_details_id": "e22fc29e-7d72-4367-b815-ecc6b0f6d46e",
+      "tour_category_id": 1,
+      "city_id": 1,
+      "provider": {
+        "id": 10,
+        "name": "Top Attractions Dubai"
+      },
+      "free_cancelation_avilable": false,
+      "live_tour_guide": false,
+      "isWeelChairAccessible": true,
+      "duration_minutes": 3.2,
+      "created_at": "2026-01-03T14:53:07.47093+00:00",
+      "updated_at": "2026-02-28T11:31:45.482905+00:00",
+      "added_by": "361b1fbe-0083-413f-89c3-20f33e706b09",
+      "meta_details": {
+        "id": "e22fc29e-7d72-4367-b815-ecc6b0f6d46e",
+        "url_key": "burj-khalifa",
+        "created_at": "2026-01-03T14:53:07.126472+00:00",
+        "meta_title": "Burj Khalifa",
+        "updated_at": "2026-01-03T14:53:07.126472+00:00",
+        "meta_keywords": "Burj Khalifa",
+        "meta_description": "Burj Khalifa"
+      },
+      "city": {
+        "id": 1,
+        "name": "Dubai",
+        "url_key": "dubai-city"
+      },
+      "tour_category": {
+        "id": 1,
+        "name": "Cruise Tours",
+        "url_key": "cruise-tours"
+      },
+      "tags": [
+        {
+          "id": 2,
+          "name": "Families with Kids",
+          "image": "babypng-d77fcc57-9f60-4016-ac4e-28d649269470"
+        },
+        {
+          "id": 1,
+          "name": "Food & Drinks",
+          "image": "cookiepng-8a884a39-3283-40e5-9998-e95ca3d45ffa"
+        }
+      ],
+      "tour_options": [
+        {
+          "id": 7,
+          "name": "At The Top + Sunrise + Morning Treat",
+          "prices": [
+            {
+              "id": 9,
+              "price": 1499,
+              "created_at": "2026-01-03T14:53:08.974798+00:00",
+              "tour_option_id": 7,
+              "participant_type": {
+                "id": 3,
+                "name": "Adult",
+                "age_max": 99,
+                "age_min": 13,
+                "created_at": "2025-12-27T18:44:33.496451+00:00"
+              },
+              "participant_type_id": 3
+            },
+            {
+              "id": 10,
+              "price": 9150,
+              "created_at": "2026-01-03T14:53:08.974798+00:00",
+              "tour_option_id": 7,
+              "participant_type": {
+                "id": 2,
+                "name": "Child",
+                "age_max": 12,
+                "age_min": 3,
+                "created_at": "2025-12-27T18:44:16.815672+00:00"
+              },
+              "participant_type_id": 2
+            }
+          ],
+          "tour_id": "380054a3-cb1e-457c-8435-8ee3fd05d2b5",
+          "created_at": "2026-01-03T14:53:08.376238+00:00",
+          "inclusions": "Admission tickets to 124 & 125 Floors of the Burj Khalifa.\nAccess to the telescopes on the observation deck.\nThe entire At the Top experience is wheelchair accessible.\nFree admission for children under 3.",
+          "sort_order": 1,
+          "updated_at": "2026-01-03T14:53:08.376238+00:00",
+          "isOpenDated": false,
+          "availability_rules": [
+            {
+              "id": 20,
+              "end_date": "2026-05-31",
+              "weekdays": [
+                77,
+                48,
+                19,
+                82,
+                53,
+                58,
+                163
+              ],
+              "is_active": true,
+              "created_at": "2026-02-28T11:31:49.841645+00:00",
+              "start_date": "2026-02-28",
+              "time_slots": [
+                {
+                  "id": 14,
+                  "label": "Full Day",
+                  "capacity": 23,
+                  "is_active": true,
+                  "created_at": "2026-02-28T11:31:50.387855+00:00",
+                  "availability_rule_id": 20
+                }
+              ],
+              "tour_option_id": 7
+            }
+          ],
+          "availability_overrides": []
+        },
+        {
+          "id": 8,
+          "name": "At The Top (Level 124 - 125)",
+          "note": "<b>Non Prime Time<b> - 7 AM to 11.30 AM & 8:30 PM to 11 PM\n<b>Prime Time<b> - 12 PM to 8 PM",
+          "prices": [
+            {
+              "id": 11,
+              "price": 399,
+              "created_at": "2026-01-03T14:53:08.974798+00:00",
+              "tour_option_id": 8,
+              "participant_type": {
+                "id": 3,
+                "name": "Adult",
+                "age_max": 99,
+                "age_min": 13,
+                "created_at": "2025-12-27T18:44:33.496451+00:00"
+              },
+              "participant_type_id": 3
+            },
+            {
+              "id": 12,
+              "price": 142,
+              "created_at": "2026-01-03T14:53:08.974798+00:00",
+              "tour_option_id": 8,
+              "participant_type": {
+                "id": 2,
+                "name": "Child",
+                "age_max": 12,
+                "age_min": 3,
+                "created_at": "2025-12-27T18:44:16.815672+00:00"
+              },
+              "participant_type_id": 2
+            }
+          ],
+          "tour_id": "380054a3-cb1e-457c-8435-8ee3fd05d2b5",
+          "created_at": "2026-01-03T14:53:08.376238+00:00",
+          "inclusions": "Entry ticket for the selected time and floor\nUse of the viewing telescopes\nWi-fi",
+          "sort_order": 2,
+          "updated_at": "2026-01-03T14:53:08.376238+00:00",
+          "isOpenDated": false,
+          "availability_rules": [
+            {
+              "id": 21,
+              "end_date": "2026-11-30",
+              "weekdays": [
+                77,
+                48,
+                19,
+                82,
+                53,
+                58
+              ],
+              "is_active": true,
+              "created_at": "2026-02-28T11:31:49.841645+00:00",
+              "start_date": "2026-02-28",
+              "time_slots": [
+                {
+                  "id": 15,
+                  "label": "Full Day",
+                  "capacity": 10,
+                  "is_active": true,
+                  "created_at": "2026-02-28T11:31:50.387855+00:00",
+                  "availability_rule_id": 21
+                }
+              ],
+              "tour_option_id": 8
+            }
+          ],
+          "availability_overrides": []
+        }
+      ],
+      "hasGroupPrice": false
+    },
+    "relatedToursByCity": [
+      {
+        "id": "8fbe93e6-b2b6-4ef9-8a43-82d74ae443f9",
+        "name": "Dolphin Show, Dubai Dolphinarium",
+        "cover_image": "dubai_dolphinarium_3_3_11zonjpg-9ac5c2ad-8f5f-4012-95dd-6a10268a6c55",
+        "url_key": "dubai-dolphinarium-dolphin-show",
+        "updated_at": "2026-03-26T10:10:20.176158+00:00",
+        "price": 65,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "url_key": "wildlife-marine-experiences"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "6dddc39e-d007-4336-af9a-8060a35a939f",
+        "name": "Dubai Aquarium, Underwater Zoo + Penguin Cove",
+        "cover_image": "aqurium_underwater_zoo_1_1_11zonjpeg-29a8c228-89d4-437d-b633-fefe25643923",
+        "url_key": "dubai-aquarium-underwater-zoo-penguin-cove",
+        "updated_at": "2026-03-15T10:20:25.329876+00:00",
+        "price": 199,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "url_key": "wildlife-marine-experiences"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "5218d8fa-7ff5-4f7f-87f2-bb729fbf3b9e",
+        "name": "Dubai Safari Park",
+        "cover_image": "dubai_safari_park_1jpg-a6ad57b6-3911-4443-ae93-ebefd77bc159",
+        "url_key": "dubai-safari-park",
+        "updated_at": "2026-03-15T10:16:46.202164+00:00",
+        "price": 99,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "url_key": "wildlife-marine-experiences"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "5f77c6d8-f3c5-46ce-889b-534ac65069f9",
+        "name": "Scuba Diving Adventure in Dubai",
+        "cover_image": "scuba_diving_1_1_11zonjpeg-7d9739df-4106-4f00-b806-2d66e7fe8f04",
+        "url_key": "scuba-diving-dubai",
+        "updated_at": "2026-03-15T10:13:46.265383+00:00",
+        "price": 399,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 5,
+          "name": "Wildlife & Marine Experiences",
+          "url_key": "wildlife-marine-experiences"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "d1ed1e48-ca31-4af9-b478-8c99065ef322",
+        "name": "Fujairah East Cost Tour (From Dubai)",
+        "cover_image": "fujairah_east_coast_4jpg-def9cc19-11f3-484f-b904-531da81e28aa",
+        "url_key": "fujairah-east-cost-tour",
+        "updated_at": "2026-03-15T10:11:21.352669+00:00",
+        "price": 1999,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 4,
+          "name": "Cultural & Heritage Tours",
+          "url_key": "cultural-heritage-tours"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "b31cfdd1-137f-40b7-9889-db5d1b6100a7",
+        "name": "Hatta Mountain Water Dam & Heritage Village Tour",
+        "cover_image": "hatta_dam_1_1_11zonjpg-be805497-f9ff-48aa-8aaf-0ee1fbd0a240",
+        "url_key": "hatta-dam-trip",
+        "updated_at": "2026-03-15T10:08:54.409644+00:00",
+        "price": 770,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 4,
+          "name": "Cultural & Heritage Tours",
+          "url_key": "cultural-heritage-tours"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "82d27362-c132-4c8d-af23-63db4343b753",
+        "name": "Love Boat Sightseeing Ride, Dubai",
+        "cover_image": "love_boat_1_2_11zonjpeg-699dbfd1-7127-4535-bb79-e043124ce99d",
+        "url_key": "love-boat-dubai",
+        "updated_at": "2026-03-15T10:02:07.089936+00:00",
+        "price": 115,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 6,
+          "name": "Boat Rides",
+          "url_key": "boat-rides"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "d3c073e5-f9ab-4bd6-bde9-66e005ef090b",
+        "name": "Speedboat Tour, Dubai",
+        "cover_image": "speed_boat_1_1_11zonjpeg-fbadee8d-9abd-4f5b-b64c-80d98fb8badf",
+        "url_key": "speedboat-sightseeing-tour-dubai",
+        "updated_at": "2026-03-15T09:59:42.708924+00:00",
+        "price": 199,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 6,
+          "name": "Boat Rides",
+          "url_key": "boat-rides"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "8becb886-e286-4cda-8da9-7e996c44db7e",
+        "name": "Yellow Boat Sightseeing Tour, Dubai",
+        "cover_image": "yellow_boat_1_1_11zonjpeg-5c4b3153-ff90-4fd9-a318-6db77f813b09",
+        "url_key": "yellow-boat-sightseeing-tour",
+        "updated_at": "2026-03-15T09:57:07.290296+00:00",
+        "price": 115,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 6,
+          "name": "Boat Rides",
+          "url_key": "boat-rides"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "1e52d2b1-cac7-4423-a968-0094391b4863",
+        "name": "Parasailing in Dubai",
+        "cover_image": "parasailing_5jpg-9bb44e3a-3e27-4fee-8e5f-d21c2bbe13a3",
+        "url_key": "parasailing-dubai",
+        "updated_at": "2026-03-15T09:44:01.777902+00:00",
+        "price": 399,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 3,
+          "name": "Adventurous Activities",
+          "url_key": "adventurous-activities"
+        },
+        "hasGroupPrice": false
+      }
+    ],
+    "relatedToursByCategory": [
+      {
+        "id": "380054a3-cb1e-457c-8435-8ee3fd05d2b5",
+        "name": "Burj Khalifa Tour Dubai",
+        "cover_image": "burj_khalifa_2jpg-cd273642-8b68-4160-a06a-c8728faca775",
+        "url_key": "burj-khalifa",
+        "updated_at": "2026-02-28T11:31:45.482905+00:00",
+        "price": 142,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 1,
+          "name": "Cruise Tours",
+          "url_key": "cruise-tours"
+        },
+        "hasGroupPrice": false
+      },
+      {
+        "id": "9cbce2bd-fcbf-46df-8193-db6173a6749d",
+        "name": "Rustar Dhow Cruise, Dubai",
+        "cover_image": "al_mansoor_dhow_cruise_2_1_11zonjpg-ed753ec3-079a-427e-a2f6-96d3f8e3a95c",
+        "url_key": "rustar-dhow-cruise-dubai-tour",
+        "updated_at": "2026-03-09T16:59:17.047287+00:00",
+        "price": 60,
+        "city": {
+          "id": 1,
+          "name": "Dubai",
+          "url_key": "dubai-city"
+        },
+        "category": {
+          "id": 1,
+          "name": "Cruise Tours",
+          "url_key": "cruise-tours"
+        },
+        "hasGroupPrice": false
+      }
+    ],
+    "availability": [],
+    "optionId": 0,
+    "reviewsData": [
+      "P",
+      null
+    ],
+    "currentReviewPage": 1,
+    "userData": {
+      "error": [
+        "SanitizedError",
+        "Error",
+        "Unexpected Server Error",
+        -7
+      ],
+      "authId": "guest:ec87cfad-641c-4595-9525-d6711aff4141",
+      "headers": [
+        "SingleFetchClassInstance",
+        {}
+      ]
+    },
+    "couponsResp": {
+      "coupons": [
+        {
+          "id": 3,
+          "code": "TEST002",
+          "coupon_type": "AUTOMATIC",
+          "discount_type": "PERCENTAGE",
+          "discount_value": 25,
+          "valid_from": "2026-03-29T04:57:00+00:00",
+          "valid_until": "2026-04-23T06:57:00+00:00",
+          "is_active": true,
+          "created_at": "2026-03-29T14:58:37.531489+00:00",
+          "updated_at": "2026-03-30T16:08:53.177736+00:00",
+          "tours": [
+            {
+              "id": "8be05459-1352-42f8-94c2-c7268cf63f59",
+              "tour_options": [
+                {
+                  "id": 2
+                }
+              ]
+            },
+            {
+              "id": "dad6ce30-9603-4ea1-8561-27bac0d29131",
+              "tour_options": [
+                {
+                  "id": 5
+                }
+              ]
+            },
+            {
+              "id": "396fa44b-5811-4e85-87ed-dc6752d1f1d9",
+              "tour_options": [
+                {
+                  "id": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
